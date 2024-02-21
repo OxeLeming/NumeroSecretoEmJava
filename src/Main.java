@@ -1,15 +1,42 @@
+import java.util.Scanner;
+import java.util.Random;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Bem-vindo ao Jogo do Número Secreto!");
+        System.out.println();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        Random random = new Random();
+        int numeroSecreto = random.nextInt(100) + 1;
+        System.out.println(numeroSecreto);
+
+        Scanner leitura = new Scanner(System.in);
+
+        int tentativasRestantes = 5;
+
+        if (tentativasRestantes > 0){
+            for (int i = 0; i < 5; i++) {
+                System.out.println("Escolha um número entre 1 e 100");
+                int numeroChutado = leitura.nextInt();
+                tentativasRestantes--;
+
+                if (numeroChutado == numeroSecreto) {
+                    System.out.println("Parabéns!!! Você acertou o número secreto");
+                    break;
+                } else {
+                    System.out.println("Número errado! Você possui " + tentativasRestantes + " tentativa (s).");
+                    if (tentativasRestantes == 0){
+                        System.out.println("GAME OVER");
+                        System.out.println("GAME OVER");
+                        System.out.println("GAME OVER");
+                    }
+                }
+            }
+
         }
+
     }
 }
+
