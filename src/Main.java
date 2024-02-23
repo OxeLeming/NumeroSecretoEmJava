@@ -25,18 +25,23 @@ public class Main {
                 if (numeroChutado == numeroSecreto) {
                     System.out.println("Parabéns!!! Você acertou o número secreto");
                     break;
+                } else if (numeroChutado < numeroSecreto){
+                    System.out.println("Número errado! O numero secreto é maior que " + numeroChutado +".Você possui " + tentativasRestantes + " tentativa (s).");
                 } else {
-                    System.out.println("Número errado! Você possui " + tentativasRestantes + " tentativa (s).");
-                    if (tentativasRestantes == 0){
-                        System.out.println("GAME OVER");
-                        System.out.println("GAME OVER");
-                        System.out.println("GAME OVER");
-                    }
+                    System.out.println("Número errado! O numero secreto é menor que " + numeroChutado +".Você possui " + tentativasRestantes + " tentativa (s).");
                 }
-            }
 
+            }
+        }
+
+        if (tentativasRestantes == 0){
+            System.out.println("Game Over!");
+            System.out.println("Game Over!");
+            System.out.println("Game Over!");
         }
 
     }
+
 }
+
 
