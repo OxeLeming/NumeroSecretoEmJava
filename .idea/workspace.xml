@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2391afe-602a-41e3-999a-7361ef280344" name="Changes" comment="Projeto inicial">
+    <list default="true" id="c2391afe-602a-41e3-999a-7361ef280344" name="Changes" comment="Comparar se é menor ou maior que o numero secreto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -108,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708480444441</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Comparar se é menor ou maior que o numero secreto">
+      <option name="closed" value="true" />
+      <created>1708730761217</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708730761217</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +133,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Projeto do número secreto, só que em Javinha" />
     <MESSAGE value="Projeto inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Projeto inicial" />
+    <MESSAGE value="Comparar se é menor ou maior que o numero secreto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comparar se é menor ou maior que o numero secreto" />
   </component>
 </project>
